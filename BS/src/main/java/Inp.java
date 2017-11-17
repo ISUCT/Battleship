@@ -15,7 +15,7 @@ class Inp {
         Scanner inp1 = new Scanner(System.in);
         while (true) {
             //Should check this
-            int x = Integer.parseInt(inp1.next());
+            int x = inp1.nextInt();
             // First method of checking
             // Commented as it more complex
             // than second one
@@ -36,7 +36,7 @@ class Inp {
             // second method
             if (localShipPos.contains(x)) {
                 System.out.println("Hit");
-                localShipPos.remove(x);
+                localShipPos.remove(localShipPos.indexOf(x));
             } else {
                 System.out.println("Missed");
             }
